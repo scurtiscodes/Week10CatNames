@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+        A Bootstrap styled table representing your choice of data.
+        A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addable Form</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid bg-dark"><br>
+<h1 class="text-light">The Cat Log</h1>
+<div class="text-light">
+    <p>
+        The Cat Log!
+    </p><br>
+    <p>
+        It's not just a decaying lump of wood in the forest where the clouters gather to bid the souls of their human masters against secret names...
+        It is also a place here, on the internet, right before you, that can record the names of your cats.
+        Or your humans' - we don't judge.
+    </p><br>
+    <p>    
+        Don't forget - <i>familial</i> that which is sensible, everyday. <i>Particular</i> is what is peculiar, yet dignified.
+        <i>Secretive</i> names could not nearly be given justice here, with these pedestrian vowels and common consonants. Let it remain ineffable.
+    
+    </p>
+</div>
+
+    <div class="card bg-dark">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-team-name" class="text-light"><h2>The House</h2></label>
+                        <div class="text-muted">
+                            <h6>(Cats Only...)</h6>
+                        </div>
+                        <p class="text-light">
+                            Record your household, give it a name. A manse or manor or simple thing, all are welcome here, cheshire or sphinx.
+                        </p>
+                        <input type="text" class="form-control" id="new-team-name">
+                    </div>
+                </div>
+            </div>
+            <div><br>
+                <button id="new-team" class="btn btn-primary form-control">Establish</button>
+            </div>
+        </div>
+    </div><br>
+    
+        <div id="teams" class="text-light"><br>
+        <!-- javascript drawDOM table -->
+        </div>
+
+    <script src="addForm.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>
